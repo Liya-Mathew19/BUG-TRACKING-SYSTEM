@@ -22,7 +22,7 @@
             </div>
             <div class="form-group">
                 <label for="project_description" class="col-form-label">Description:</label>
-                <textarea class="form-control"name="project_description" id="project_description"></textarea>
+                <textarea class="form-control @error('project_description') is-invalid @enderror" value="{{ old('project_description') }}" autocomplete="project_description" autofocus id="project_name" name="project_description" id="project_description">{{ old('project_description') }}</textarea>
             </div>
       </div>
                 <div class="card-footer">

@@ -24,14 +24,14 @@
         </div>
         <div class="form-group">
             <label for="issue_description" class="col-form-label">Description:</label>
-            <textarea class="form-control @error('issue_description') is-invalid @enderror" value="{{ old('issue_description') }}" autocomplete="issue_description" autofocus id="issue_description" name="issue_description" id="issue_description"></textarea>
+            <textarea class="form-control @error('issue_description') is-invalid @enderror" value="{{ old('issue_description') }}" autocomplete="issue_description" autofocus id="issue_description" name="issue_description" id="issue_description">{{ old('issue_description') }}</textarea>
             @error('issue_description')
                         <font color="red">* {{ $message }}</font>
                     @enderror
         </div>
       </div>
                 <div class="card-footer">
-                    <a href="{{route('home')}}"><button type="button" class="btn btn-secondary">Cancel</button></a>
+                    <a href="{{url()->previous()}}"><button type="button" class="btn btn-secondary">Cancel</button></a>
                     <button type="submit" class="btn btn-primary">CREATE ISSUE</button>
                 </div>
             </div>

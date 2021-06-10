@@ -31,7 +31,7 @@
                     <center><font color="red"><h5>No Projects Found</h5></font></center>
                     @endif
                     @foreach($projects as $project_details)
-                  <a href="{{route('issues',$project_details->id)}}">
+                  <a href="{{route('issues',$project_details->id)}}" style="text-decoration:none;color:black">
                     <div class="card" style="margin-top: 16px; cursor: pointer;">
                         <div class="card-body">
                         <div class="row">

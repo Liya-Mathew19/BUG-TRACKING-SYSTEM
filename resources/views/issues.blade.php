@@ -78,7 +78,7 @@
                         $color="blue";
                     }
                     @endphp
-                    <a href="{{route('editIssue',$issue_details->id)}}">
+                    <a href="{{route('editIssue',$issue_details->id)}}" style="text-decoration:none;color:black">
                     <div class="card issues_card" id="issues_card" style="margin-top: 16px; border-color:{{$color}}; cursor: pointer;">
                         <div class="card-body">
                             <div class="row">
